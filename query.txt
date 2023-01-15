@@ -1,0 +1,133 @@
+
+# query {
+#   users {
+#     edges {
+#       node {
+#         username,
+#         archived,
+#         verified,
+#         email,
+#         secondaryEmail,
+#       }
+#     }
+#   }
+# }
+
+# query {
+#   users(status_Archived: false){
+#     edges {
+#       node {
+#         username,
+#         archived,
+#       }
+#     }
+#   }
+# }
+
+# query {
+#   me {
+#     username,
+#     verified
+#   }
+# }
+
+
+# query {
+#   users (last: 1){
+#     edges {
+#       node {
+#         id,
+#         username,
+#         email,
+#         isActive,
+#         archived,
+#         verified,
+#         secondaryEmail
+#       }
+#     }
+#   }
+# }
+
+
+# query {
+#   user (id: "VXNlck5vZGU6OA=="){
+#     username,
+#     verified
+#   }
+# }
+# mutation {
+#   register(
+#     email: "new_user100@email.com",
+#     username: "admin100",
+#     password1: "adminadmin",
+#     password2: "adminadmin",
+#   ) {
+    
+#     success,
+#     errors,
+#     token,
+#     refreshToken
+#   }
+# }
+
+
+# mutation {
+#   verifyAccount(token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluMTAwIiwiZXhwIjoxNjczODA4NTU0LCJvcmlnSWF0IjoxNjczODA4MjU0fQ.VHe9zwHIC9usEdO7HQIzBow1BvVAanOQ8Ib-ZNGrdZQ") {
+#     success,
+#     errors
+#   }
+# }
+
+
+# mutation {
+#   tokenAuth(username: "admin100", password: "adminadmin") {
+#     success,
+#     errors,
+#     unarchiving,
+#     token,
+#     refreshToken,
+#     unarchiving,
+    
+#     user {
+#       id,
+#       username,
+#     }
+#   }
+# }
+
+
+
+
+
+
+# mutation {
+#   updateAccount(
+#     firstName: "jhon"
+#   ) {
+#     success,
+#     errors
+#   }
+# }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
